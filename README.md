@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Todo List Project
 
-## Getting Started
+This is a simple Todo List project created using Next.js, HTML, and CSS. It allows users to manage their tasks by adding, editing, and deleting items from the list.
 
-First, run the development server:
+Features
+Add a new task: Users can enter a task description and press the "Add" button to add it to the list.
+Edit a task: Users can click on the task to enter edit mode and modify the task description.
+Delete a task: Users can click on the delete icon next to a task to remove it from the list.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To get started with the Todo List project, follow these steps:
+Clone the repository: git clone <repository-url>
+Navigate to the project directory: cd todo-list-project
+Install the dependencies: npm install
+Start the development server: npm run dev
+Open your browser and visit: http://localhost:3000
+Project Structure
+The project structure is organized as follows:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Technologies Used
+The Todo List project is built using the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js: A React framework for building server-side rendered and static websites.
+HTML: The standard markup language for creating web pages.
+CSS: The style sheet language used for styling the web pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT License. Feel free to use and modify it for your own purposes.
