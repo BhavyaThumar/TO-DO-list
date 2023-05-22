@@ -22,31 +22,31 @@ const todos = () => {
 
     }
     return (
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-col text-center w-full mb-20">
-                    <h1 class="text-4xl font-medium title-font mb-4 text-gray-900">
+        <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+                <div className="flex flex-col text-center w-full mb-20">
+                    <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">
                         Your TO-DOs
                     </h1>
-                    {todos. length == 0 &&<p class="lg:w-2/3 mx-auto leading-relaxed text-base">TO-DO</p>}
+                    {todos. length == 0 &&<p className="lg:w-2/3 mx-auto leading-relaxed text-base">TO-DO</p>}
                 </div>
-                <div class="flex flex-wrap -m-4">
+                <div className="flex flex-wrap -m-4">
                     {todos.map((item) => {
                         return (
-                            <div class="p-4 lg:w-1/4 md:w-1/2">
-                                <div class="h-full flex flex-col items-center text-center">
+                            <div className="p-4 lg:w-1/4 md:w-1/2">
+                                <div className="h-full flex flex-col items-center text-center">
                                     <img
                                         alt="team"
-                                        class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                                        className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                                         src={`https://picsum.photos/2000/3000?a=${item.title}`}
                                     />
-                                    <div class="w-full">
-                                        <h2 class="title-font font-medium text-lg text-gray-900">
+                                    <div className="w-full">
+                                        <h2 className="title-font font-medium text-lg text-gray-900">
                                             {item.title}
                                         </h2>
-                                        <p class="mb-4">{item.desc}</p>
-                                        <span class="inline-flex">
-                                            <a class="text-gray-500 cursor-pointer" onClick={()=>{deleteTodo(item.title)}} >
+                                        <p className="mb-4">{item.desc}</p>
+                                        <span className="inline-flex">
+                                            <a className="text-gray-500 cursor-pointer" onClick={()=>{deleteTodo(item.title)}} >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ const todos = () => {
                                                     <path d="M 10 2 L 9 3 L 3 3 L 3 5 L 4.109375 5 L 5.8925781 20.255859 L 5.8925781 20.263672 C 6.023602 21.250335 6.8803207 22 7.875 22 L 16.123047 22 C 17.117726 22 17.974445 21.250322 18.105469 20.263672 L 18.107422 20.255859 L 19.890625 5 L 21 5 L 21 3 L 15 3 L 14 2 L 10 2 z M 6.125 5 L 17.875 5 L 16.123047 20 L 7.875 20 L 6.125 5 z" />
                                                 </svg>
                                             </a>
-                                            <a class="ml-2 text-gray-500 cursor-pointer" href = {`/edit/${item.title}`}>
+                                            <a className="ml-2 text-gray-500 cursor-pointer" href = {`/edit/${item.title}`}>
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 48 48"
@@ -87,14 +87,14 @@ const todos = () => {
                                                     />
                                                 </svg>
                                             </a>
-                                            <a class="ml-2 text-gray-500">
+                                            <a className="ml-2 text-gray-500">
                                                 {/* <svg
                                                     fill="none"
                                                     stroke="currentColor"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
                                                     stroke-width="2"
-                                                    class="w-5 h-5"
+                                                    className="w-5 h-5"
                                                     viewBox="0 0 24 24"
                                                 >
                                                     <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
